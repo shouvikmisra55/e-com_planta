@@ -1,0 +1,37 @@
+Build a fully functional, responsive e-commerce web app for a Plant Nursery. The design should use a soothing, nature-inspired color palette (greens, browns, off-whites).
+
+Core Features:
+
+Navigation: A navbar with links to 'Shop', 'Cart', and 'Admin Login'.
+
+Admin Dashboard (The Owner Page): A protected view where the owner can upload plant inventory. Include a form with fields for: Plant Name, Description, Price, and Image URL. Display a table below the form showing the current inventory with options to delete items.
+
+Customer Storefront: A grid layout displaying the added plants. Each card should show the image, name, price, and an 'Add to Cart' button.
+
+Shopping Cart: A slide-out or separate page showing selected items with a total price calculation.
+
+Checkout & Payment: A checkout page where the user enters their shipping address. Include a Demo Payment Portal: a form asking for card details (visual only) that validates the input and shows a 'Payment Successful' success animation when the 'Pay Now' button is clicked. Do not process real money."
+
+Option 2: Best for Coding Assistants (Cursor, ChatGPT, Claude)
+
+This prompt is better if you are building this in VS Code and want specific code structures (like React and Tailwind).
+
+Prompt: "Act as a Senior Full Stack Developer. I need you to generate a single-page e-commerce application for a Nursery using React, Tailwind CSS, and Lucide React icons.
+
+State Management: Use React useState and useEffect to manage the inventory and cart data. For this MVP, use localStorage to persist the 'database' of plants so data remains if I refresh the page.
+
+Views Required:
+
+View 1: Admin Panel: Create a form to add new plants (Object structure: id, name, category, price, description, image).
+
+View 2: Marketplace: Display plants in a responsive grid. Implement a filtering system (e.g., Indoor, Outdoor, Succulents).
+
+View 3: Checkout: A multi-step form.
+
+Step 1: Cart Summary.
+
+Step 2: Shipping Address Form.
+
+Step 3: Mock Payment Gateway. Create a realistic-looking credit card form. When the user hits 'Pay', simulate a 2-second loading spinner and then display a success receipt with a fictional Order ID.
+
+Please provide the full code in a structure I can easily copy into my project.
