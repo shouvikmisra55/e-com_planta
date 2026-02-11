@@ -4,6 +4,7 @@ import { useCart } from "@/hooks/use-cart";
 import { ShoppingBag, Menu, X, Leaf, User, LogOut } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,7 +26,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-border/40">
+    <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
@@ -40,7 +41,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link 
                 key={link.path} 
@@ -52,6 +53,8 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            <ThemeToggle />
 
             <Link href="/cart" className="relative p-2 rounded-full hover:bg-secondary transition-colors group">
               <ShoppingBag className="h-5 w-5 text-foreground group-hover:text-primary transition-colors" />
